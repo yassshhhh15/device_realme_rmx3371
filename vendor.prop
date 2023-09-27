@@ -216,8 +216,6 @@ ro.apk_verity.mode=2
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 
-# Netflix
-ro.netflix.bsp_rev=Q8250-19134-1
 
 # Multi-Gen LRU
 persist.device_config.mglru_native.lru_gen_config=core
