@@ -216,6 +216,10 @@ ro.apk_verity.mode=2
 debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 
+# Video Calling
+persist.vendor.radio.report_codec=1 
+persist.vendor.radio.vdp_on_ims_cap=1
+persist.vendor.qti.telephony.vt_cam_interface=2
 
 # Multi-Gen LRU
 persist.device_config.mglru_native.lru_gen_config=core
