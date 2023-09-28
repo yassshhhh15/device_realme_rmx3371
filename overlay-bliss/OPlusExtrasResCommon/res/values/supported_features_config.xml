@@ -24,7 +24,7 @@
     <bool name="config_deviceSupportsKcal">true</bool>
 
     <!-- Whether device supports Changing Maximum Brightness -->
-    <bool name="config_deviceSupportsChangingMaxBrightness">true</bool>
+    <bool name="config_deviceSupportsChangingMaxBrightness">false</bool>
 
     <!-- Whether device supports Disabling fsync -->
     <bool name="config_deviceSupportsFSyncOff">false</bool>
@@ -42,7 +42,7 @@
     <bool name="config_deviceSupportsHightTouchPollingRate">true</bool>   
 
     <!-- Whether device supports Touch Gestures -->
-    <bool name="config_deviceSupportsTouchGestures">true</bool>
+    <bool name="config_deviceSupportsTouchGestures">false</bool>
 
     <!-- Whether device supports USB2.0 Force Fastcharge -->
     <bool name="config_deviceSupportsUSB2FC">false</bool>
