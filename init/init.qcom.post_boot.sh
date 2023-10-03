@@ -42,7 +42,7 @@ function 8953_sched_dcvs_eas()
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
         echo 0 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/rtg_boost_freq
 
-        echo 652800 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
+        echo 576000 > /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq
 
         #input boost params
         echo 1401600 > /sys/module/cpu_boost/parameters/input_boost_freq
