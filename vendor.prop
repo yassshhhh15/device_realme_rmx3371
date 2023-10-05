@@ -162,6 +162,13 @@ ro.vendor.product.device.db=OP_DEVICE
 ro.vendor.product.manufacturer.db=OP_PHONE
 vendor.product.device=OP_PHONE
 vendor.product.manufacturer=OPD
+ro.vendor.audio.dolby.surround.enable=true
+
+# Spatial Audio
+ro.audio.spatializer_enabled=true
+ro.audio.spatializer_transaural_enabled_default=false
+persist.vendor.audio.spatializer.speaker_enabled=true
+ro.vendor.audio.feature.spatial=7
 
 
 # DRM
