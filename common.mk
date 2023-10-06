@@ -45,11 +45,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.soundtrigger@2.3-impl \
     audio.bluetooth.default \
-    audio.primary.kona \
     audio.r_submix.default \
     audio.usb.default \
-    audio_amplifier.kona \
-    liba2dpoffload \
     libbatterylistener \
     libcomprcapture \
     libexthwplugin \
