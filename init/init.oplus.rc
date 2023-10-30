@@ -4,10 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-on early-init
-    # Oplus audio modules
-    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules audio_extend audio_max98937 audio_tfa98xx-v6 audio_ak4376
-
 on init
     # Charger
     write /proc/fastchg_fw_update 1
@@ -86,7 +82,6 @@ on boot
     chown system system /sys/class/power_supply/usb/otg_switch
     chown system system /sys/class/power_supply/usb/type
 
-
     # Display
     chmod 0666 /dev/oplus_display
     chmod 0666 /sys/kernel/oplus_display/dimlayer_bl_en
@@ -96,7 +91,6 @@ on boot
     chmod 0666 /sys/kernel/oplus_display/panel_serial_number
     chmod 0666 /sys/kernel/oplus_display/power_status
 
-
     chown system system /dev/oplus_display
     chown system system /sys/kernel/oplus_display/dimlayer_bl_en
     chown system system /sys/kernel/oplus_display/dynamic_osc_clock
@@ -104,31 +98,12 @@ on boot
     chown system system /sys/kernel/oplus_display/notify_fppress
     chown system system /sys/kernel/oplus_display/panel_serial_number
     chown system system /sys/kernel/oplus_display/power_status
-    chown system system /dev/tp_misc
-    chown system system /proc/touchpanel/tp_fw_update
-    chown system system /proc/touchpanel/oplus_tp_limit_enable
-    chown system system /proc/touchpanel/oplus_tp_direction
-    chown system system /proc/touchpanel/double_tap_enable
-    chown system system /proc/touchpanel/coordinate
-    chown system system /proc/touchpanel/game_switch_enable
-    chown system system /proc/touchpanel/fp_enable
-    chown system system /proc/touchpanel/baseline_test
-    chown system system /proc/touchpanel/kernel_grip_handle
-    chown system system /proc/touchpanel/curved_size
-    chown system system /proc/touchpanel/charge_detect
-    chown system system /proc/touchpanel/aosp_double_tap_enable
-
-    write /proc/touchpanel/smooth_level 3
-    write /proc/touchpanel/sensitive_level 3
-    write /proc/touchpanel/game_switch_enable 1
-    write /proc/touchpanel/double_tap_enable 1
-    write /proc/touchpanel/aosp_double_tap_enable 1
-
-    # Sensors
-    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
     # TOF
     chown cameraserver cameraserver /dev/stmvl53l1_ranging
+
+    # Sensors
+    chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
 on property:ro.boot.prjname=*
     # Display
@@ -143,10 +118,10 @@ on property:sys.boot_completed=1
 
 on property:vendor.post_boot.parsed=1
     # IRQ Tuning
-    # IRQ 299: msm_drm
-    # IRQ 337: kgsl_3d0_irq
-    write /proc/irq/299/smp_affinity_list 2
-    write /proc/irq/337/smp_affinity_list 1
+    # IRQ 115: msm_drm
+    # IRQ 332: kgsl_3d0_irq
+    write /proc/irq/115/smp_affinity_list 2
+    write /proc/irq/332/smp_affinity_list 1
 
 on property:sys.usb.config=adb && property:sys.usb.configfs=1
     write /config/usb_gadget/g1/idVendor 0x22D9

@@ -5,10 +5,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Radio
 if grep -q simcardnum.doublesim=1 /proc/cmdline; then
     setprop vendor.radio.multisim.config dsds
 fi
-
 
 # Wifi
 persistbdf=`md5sum /mnt/vendor/persist/bdwlan.elf |cut -d" " -f1`
