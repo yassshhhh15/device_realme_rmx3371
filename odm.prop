@@ -15,3 +15,11 @@ debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 
 # Media
 ro.odm.build.media_performance_class=30
+
+# RIL
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.poweron_opt=1
+persist.vendor.radio.stack_id_1=1
+persist.vendor.ims.vt.enableadb=3
+ro.vendor.oplus.radio.project=2
+ro.vendor.oplus.radio.sar_regionmark=FCC
