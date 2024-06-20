@@ -103,7 +103,7 @@
             <name>IRadioConfig</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::IRadioConfig/default</fqname>
+        <fqname>@1.2::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.secure_element</name>
