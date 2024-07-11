@@ -221,13 +221,13 @@ PRODUCT_PACKAGES += \
     AOSPAOPlusFrameworksRes \
     OPlusCarrierConfigRes \
     OPlusFrameworksRes \
-    OPlusSettingsRes \
-    OPlusSystemUIRes \
-    OPlusTetheringRes \
     OPlusFrameworksResTarget \
+    OPlusSystemUIRes \
+    OPlusSystemUIResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
-    OPlusSystemUIResTarget
+    OPlusTetheringRes
+    
 
 # Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

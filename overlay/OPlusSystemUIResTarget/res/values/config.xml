@@ -11,5 +11,17 @@
      <!-- Margin on the bottom of the charging indicator on Keyguard -->
    <!-- Margin on the bottom of the charging indicator on Keyguard -->
     <dimen name="keyguard_indication_margin_bottom">3dp</dimen>
+   
+    <!-- Allow devices override audio panel location to the left side -->
+    <bool name="config_audioPanelOnLeftSide">true</bool>
 
+    <!-- Color of the UDFPS Pressed view -->
+    <color name="config_udfpsColor">#00ffffff</color>
+
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfpsHbmType">0</integer>
+   
 </resources>
