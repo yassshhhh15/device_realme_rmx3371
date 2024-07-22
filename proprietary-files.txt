@@ -25,19 +25,7 @@ odm/etc/acdbdata/Speaker_cal.acdb
 vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/libadsprpc.so
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib/libmdsprpc.so
-vendor/lib/libsdsprpc.so
-vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libmdsprpc.so
-vendor/lib64/libsdsprpc.so
-vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ADSP modules - RUI
@@ -241,11 +229,6 @@ vendor/lib64/libstagefright_soft_ddpdec.so|ab6aabfe237df482c0ca9d78bd7ad08083b9d
 vendor/lib64/libstagefrightdolby.so|3f78d8a4eb9e0b5d07fe82747e08bb82d4bc0c21
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|da03a56f6fbeb2bbe23ebb3a48b30fc3e5e76da3
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|45ab26d743b6a56b505447012347493ff41057fc
-
-
-# Spatial Audio
-vendor/lib/soundfx/libspatialaudio.so|c84a1098a775401344d97d3c7638498d9207ccad
-vendor/lib64/soundfx/libspatialaudio.so|6032bab9daed70af13ab9ebcc21a40d703d05bbe
 
 
 # Bluetooth
@@ -925,7 +908,6 @@ odm/lib64/libtriplecam_video_optical_zoom.so
 odm/lib64/libui.so
 odm/lib64/libvl53l1_daemon.so
 odm/lib64/libwatermark_photo.so
-odm/lib64/sensors.hal.tof.so
 odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so
 odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk_platform.so
 odm/lib64/vendor.oplus.hardware.orms@1.0.so
@@ -1022,7 +1004,6 @@ vendor/lib64/libnanopb.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libopenvx.so
 vendor/lib64/libos.so
-vendor/lib64/libskewknob.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
@@ -1160,6 +1141,20 @@ vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 vendor/etc/charger_fstab.qti
 
 # Charger firmware
+odm/firmware/fastchg/136730/charging_thermal_config_default.txt
+odm/firmware/fastchg/136730/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/136858/charging_thermal_config_default.txt
+odm/firmware/fastchg/136858/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/136859/charging_thermal_config_default.txt
+odm/firmware/fastchg/136859/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21623/charging_thermal_config_default.txt
+odm/firmware/fastchg/21623/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169A/charging_thermal_config_default.txt
+odm/firmware/fastchg/2169A/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/2169B/charging_thermal_config_default.txt
+odm/firmware/fastchg/2169B/oplus_vooc_fw_rk826.bin
+odm/firmware/fastchg/21732/charging_thermal_config_default.txt
+odm/firmware/fastchg/21732/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/21733/charging_thermal_config_default.txt
 odm/firmware/fastchg/21733/oplus_vooc_fw_rk826.bin
 odm/firmware/fastchg/charging_thermal_config_default.txt
@@ -1487,9 +1482,6 @@ vendor/lib64/lib-siputility.so|e83f17dc7fae85573034cdb43dde4d69956a2b51
 vendor/lib64/lib-uceservice.so|0968c76a7996a18b88ebc4720eb63dbdbf2f4784
 vendor/lib64/libpdmapper.so|dbf630607c04ebec7296f46fb219a109f89907f6
 vendor/lib64/libqcrildatactl.so|3cd0faafabd1b51e98196b9f07d6a5ae7af97c98
-vendor/lib64/libqti-iopd.so|7aa0119a10e7d22c43369139f5e115295f5bf937
-vendor/lib64/libqti-perfd.so|93a691c6d4928449ab38d2d9fe2a31267baf60e3
-vendor/lib64/libqti-utils.so|cb9a0298b12cf8eb6660a0da214c3478fe58b8e8
 vendor/lib64/librcc.so|7b45e6cd7436fbb03e2c19e62a3db138125db093
 vendor/lib64/libril-qc-ltedirectdisc.so|3f5de3a1ab73dac212cb07a439786e9544967aac
 vendor/lib64/libril-qc-radioconfig.so|9aa2d62c3672a2bed80defb9b3e35e58e68b5660
@@ -1548,6 +1540,7 @@ vendor/lib64/libembmsservice.so|640a3ef6b460e2c73f804eedf506806a7e5f47cc
 vendor/lib64/libnetmgr_nr_fusion.so|ca0f6898adb02c6257f845b73dbc99e79b75611c
 vendor/lib64/libnetmgr_rmnet_ext.so|34dd1b849e1fa5cbd22e13404a916356ef8d9519
 vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so|3cf82c2c57f487e1a7f14f53a8faf6ddcd774c9b
+vendor/lib64/libqdutils.so
 
 # Secure element
 odm/bin/hw/vendor.qti.secure_element@1.2-service
@@ -1566,83 +1559,6 @@ odm/lib64/vendor.qti.esepowermanager@1.1.so
 # Diag
 vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
-
-# Display (Features)
-vendor/bin/feature_enabler_client
-vendor/etc/init/feature_enabler_client.rc
-vendor/etc/OPlus_QC_LTM_Commercial_SM8250_2020_02_07.pfm
-vendor/etc/Oppo_QC_LTM_Commercial_SM8250_2020_01_15.pfm
-
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
-
-# Eyeprotect-data
-odm/etc/samsung1024_ams662zs01_cinema_eyeprotect_data.xml
-odm/etc/samsung1024_ams662zs01_colorful_eyeprotect_data.xml
-odm/etc/samsung1024_ams662zs01_eyeprotect_data.xml
-odm/etc/samsung1024_ams662zs01_srgb_eyeprotect_data.xml
-odm/etc/samsung1024_ana6706_cinema_eyeprotect_data.xml
-odm/etc/samsung1024_ana6706_colorful_eyeprotect_data.xml
-odm/etc/samsung1024_ana6706_eyeprotect_data.xml
-odm/etc/samsung1024_ana6706_srgb_eyeprotect_data.xml
-
-# Display calibration data
-vendor/etc/ltm_config_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_AMS678UW01_qhd_panel.xml
-vendor/etc/ltm_config_samsung_S6E3HC3_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_SOFE03F_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
-vendor/etc/ltm_config_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/ltm_config_samsung_amb655xl08_amoled_fhd+_panel.xml
-vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_21623.xml
-vendor/etc/ltm_config_samsung_ams662zs01_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml
-vendor/etc/ltm_config_samsung_fhd_amoled.xml
-vendor/etc/qdcm_calib_data_19795_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml
-vendor/etc/qdcm_calib_data_boe_nt37800_amoled_fhd+_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_nt36523_lcd_vid_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_nt36525_video_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_nt36672e_90Hz_fhd_plus_video_mode_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_120HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_60HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_90HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_120HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_60HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_90HZ_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml
-vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml
-vendor/etc/qdcm_calib_data_samsung_AMS678UW01_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_AMS678UW01_qhd_panel.xml
-vendor/etc/qdcm_calib_data_samsung_S6E3HC3_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_SOFE03F_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_amb655uv01_amoled_fhd+_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_samsung_amb655x_fhd_cmd_mode_dsc_dsi_panel.xml
-vendor/etc/qdcm_calib_data_samsung_amb655xl08_amoled_fhd+_panel.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_21623.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_21623.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_ams662zs01_dvt_dsc_cmd_mode_panel.xml
-vendor/etc/qdcm_calib_data_samsung_fhd_amoled.xml
-vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml
-vendor/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml
-vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml
-vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml
-vendor/lib64/libqdutils.so
 
 
 # Display postprocessing
@@ -1728,11 +1644,11 @@ vendor/firmware/image/opluseid.mdt
 
 
 # Osense - RUI
-odm/lib64/libosenseaidlhalclient.so|d81f06f16394fb495360fb1ca7fb60f1c4f9c4a4
-odm/lib64/libosensehalclient.so|f6e8c571abecc4f90e6cfb437952e1ce404705cb
-odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|dc2e288949b13973af6c51de1324075cb43a0dc9
-odm/lib64/vendor.oplus.hardware.osense.client@1.0.so|7afe5ad5a5e1159a47415c0755e6c950752ed8ce
-vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so|dc2e288949b13973af6c51de1324075cb43a0dc9
+odm/lib64/libosenseaidlhalclient.so
+odm/lib64/libosensehalclient.so
+odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
+odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
+vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so
 
 # Perf
 odm/lib/vendor.oplus.hardware.performance-V1-ndk_platform.so
@@ -1790,7 +1706,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libspcom.so
 
 # MM OSAL
 vendor/lib/libmmosal.so
@@ -1919,16 +1834,64 @@ vendor/lib64/libscveObjectTracker_stub.so
 
 # SecureMSM
 vendor/lib/libsecureui.so
+vendor/lib/libsecureui_svcsock.so
 vendor/lib64/libcpion.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/libsecureui.so
+vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libspl.so
 
 # Sensors
-odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
+odm/lib/sensors.hal.tof.so
+odm/lib/sensors.hal.tofcalib.so
+odm/lib64/sensors.hal.tof.so
+odm/lib64/sensors.hal.tofcalib.so
+odm/lib/vendor.oplus.hardware.oplusSensor@1.0.so
+odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
+odm/bin/oplus_sensor_test
 odm/bin/oplus_sensor_fb
+odm/lib/liboplus_service.so
+odm/lib64/liboplus_service.so
+odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
+odm/etc/vintf/manifest/manifest_oplusSensor.xml
+vendor/lib64/libspcom.so
+vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/bin/sensors.qti
+vendor/bin/sscrpcd
+vendor/etc/init/init.vendor.sensors.rc
+vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
+vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib/libsensorcal.so
+vendor/lib64/libsns_device_mode_stub.so
+vendor/lib/libsensorslog.so
+vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libsensorslog.so
+vendor/lib64/libsnsapi.so
+vendor/lib/libsns_fastRPC_util.so
+vendor/lib/libsnsdiaglog.so
+vendor/lib64/libsnsapi.so
+vendor/lib/libsns_device_mode_stub.so
+vendor/lib/libssc.so
+vendor/lib64/libssc_default_listener.so
+vendor/lib/sensors.ssc.so
+vendor/lib/libsns_low_lat_stream_stub.so
+vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib64/libsensorcal.so
+vendor/lib64/libsns_fastRPC_util.so
+vendor/lib64/libsnsdiaglog.so
+vendor/lib64/libssc.so
+vendor/lib64/sensors.ssc.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+
+
+# Sensors configs
+odm/etc/sensor/config/kona_bu52053nvx_0.json
 odm/etc/sensor/config/kona_qrd_ak991x_0.json
 odm/etc/sensor/config/kona_qrd_alsps.json
 odm/etc/sensor/config/kona_qrd_bmi26x_0.json
@@ -1942,17 +1905,6 @@ odm/etc/sensor/config/kona_qrd_mmc5603nj.json
 odm/etc/sensor/config/kona_qrd_mn29005.json
 odm/etc/sensor/config/kona_qrd_sx933x_0.json
 odm/etc/sensor/sensor_config.json
-odm/etc/vintf/manifest/manifest_oplusSensor.xml
-odm/lib64/liboplus_service.so
-odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
-vendor/bin/sensors.qti
-vendor/bin/sscrpcd
-vendor/etc/init/init.vendor.sensors.rc
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
-vendor/etc/init/vendor.sensors.qti.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
 vendor/etc/sensors/config/alsps.json
 vendor/etc/sensors/config/bmi160.json
 vendor/etc/sensors/config/bmi26x_0.json
@@ -1975,6 +1927,7 @@ vendor/etc/sensors/config/kona_qrd_tmd2725_0.json
 vendor/etc/sensors/config/kona_sx932x_0.json
 vendor/etc/sensors/config/lps22hh_0.json
 vendor/etc/sensors/config/mmc5603nj.json
+vendor/etc/sensors/config/pah_813x_0_reg.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
@@ -1989,6 +1942,7 @@ vendor/etc/sensors/config/sns_cm.json
 vendor/etc/sensors/config/sns_dae.json
 vendor/etc/sensors/config/sns_device_orient.json
 vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_direct_channel.json
 vendor/etc/sensors/config/sns_distance_bound.json
 vendor/etc/sensors/config/sns_dpc.json
 vendor/etc/sensors/config/sns_facing.json
@@ -2011,22 +1965,31 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
 vendor/etc/sensors/config/stk3x5x_0.json
 vendor/etc/sensors/config/sx932x_0.json
+vendor/etc/sensors/config/sxr2130_bma4_0.json
+vendor/etc/sensors/config/sxr2130_bmg160_0.json
+vendor/etc/sensors/config/sxr2130_llcm.json
+vendor/etc/sensors/config/sxr2130_morpheus_icm4x6xx_0.json
+vendor/etc/sensors/config/sxr2130_morpheus_ndi_atraxa_0.json
+vendor/etc/sensors/config/sxr2130_morpheus_rpr0521rs_0.json
+vendor/etc/sensors/config/sxr2130_morpheus_sku3_ak994x_0.json
+vendor/etc/sensors/config/sxr2130_morpheus_sku3_icm4x6xx_0.json
+vendor/etc/sensors/config/sxr2130_morpheus_sku3_icm4x6xx_1.json
+vendor/etc/sensors/config/sxr2130_oracle_ak991x_0.json
+vendor/etc/sensors/config/sxr2130_oracle_icm4x6xx_0.json
+vendor/etc/sensors/config/sxr2130_oracle_icm4x6xx_1.json
+vendor/etc/sensors/config/sxr2130_oracle_pah_813x_0.json
+vendor/etc/sensors/config/sxr2130_oracle_rpr0521rs_0.json
+vendor/etc/sensors/config/sxr2130_oracle_tsl2540.json
+vendor/etc/sensors/config/sxr2130_sns_amd_sw_enabled.json
+vendor/etc/sensors/config/sxr2130_sns_dae.json
+vendor/etc/sensors/config/sxr2130_sns_tilt_sw_enabled.json
+vendor/etc/sensors/config/sxr2130_trinity_icm4x6xx_0.json
+vendor/etc/sensors/config/sxr2130_trinity_ndi_atraxa_0.json
+vendor/etc/sensors/config/sxr2130_trinity_rpr0521rs_0.json
 vendor/etc/sensors/config/tcs3408.json
 vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/config/wigig_sensing_0.json
 vendor/etc/sensors/sns_reg_config
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
-vendor/lib64/libsensorcal.so
-vendor/lib64/libsensorslog.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
-vendor/lib64/libssc.so
-vendor/lib64/libssc_default_listener.so
-vendor/lib64/sensors.ssc.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 
 # SMC Invoke
@@ -2130,8 +2093,8 @@ vendor/bin/vppservice
 vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/vintf/manifest/manifest_oplus_osiesr.xml
 vendor/lib/libqc2vppfilter.so
-vendor/lib64/libOmxVpp.so
 vendor/lib64/libqc2vppfilter.so
+vendor/lib64/libOmxVpp.so
 vendor/lib64/libvppclient.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
@@ -2155,8 +2118,10 @@ odm/etc/init/android.hardware.drm@1.3-service.widevine.rc|7801ccf2718b30ffac54c4
 -odm/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 odm/lib64/mediadrm/libwvdrmengine.so|0f3d969c316841306b4e97bc9ae5d449b11d803c
 odm/lib64/liboemcrypto.so|5876fe1812e630de5417d3f028b43c02139c32ad
+-vendor/lib/libStDrvInt.so
 odm/lib64/libwvhidl.so|47d7bd45bee04d43e3679a552558abc848e5594c
 vendor/lib64/libtrustedapploader.so|030366cf9b29f9beacea371f1c2a8781664be851
+-vendor/lib64/libStDrvInt.so
 
 # Wifi
 odm/etc/wifi/bdwlan.elf
